@@ -1,0 +1,37 @@
+﻿@TodoAPI_HostAddress = https://localhost:7179
+
+POST {{TodoAPI_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+ "name": "Pedro Zeferino Bittencourt",
+ "entidade": ["Exu Tranca-Rua das Almas", "Erê Folhinha", "Marinheiro José",
+ "Exu do Lodo"],
+ "isComplete" : true
+}
+
+
+
+###
+
+GET {{TodoAPI_HostAddress}}/api/todoitems
+
+###
+
+@id=0
+GET {{TodoAPI_HostAddress}}/api/todoitems/{{id}}
+
+###
+
+POST {{TodoAPI_HostAddress}}/api/todoitems
+Content-Type: application/json
+
+{
+ "name" : "Ana Luisa Miguel Paterno Lima",
+ "entidade" : ["Pombogira Maria Padilha", "Cigana Estela", "Exu Cigano Bruno",
+ "Erê Ruizinho", "Malandra Maria Preta da Lapa",
+ "Marinheira Luna", "Cabocla Jurema"],
+ "isComplete" : true
+}
+
+###

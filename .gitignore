@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build .NET
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# Testes e cobertura
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# Banco de dados local
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+# Configurações locais e segredos
+appsettings.Local.json
+appsettings.*.Local.json
+.env
+.env.*
+!.env.example
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
