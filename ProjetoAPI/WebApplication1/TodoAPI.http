@@ -5,8 +5,7 @@ Content-Type: application/json
 
 {
  "name": "Pedro Zeferino Bittencourt",
- "entidade": ["Exu Tranca-Rua das Almas", "Erê Folhinha", "Marinheiro José",
- "Exu do Lodo"],
+ "email": "pedro.zeferinob@gmail.com",
  "isComplete" : true
 }
 
@@ -18,7 +17,7 @@ GET {{TodoAPI_HostAddress}}/api/todoitems
 
 ###
 
-@id=0
+@id=4
 GET {{TodoAPI_HostAddress}}/api/todoitems/{{id}}
 
 ###
@@ -28,10 +27,24 @@ Content-Type: application/json
 
 {
  "name" : "Ana Luisa Miguel Paterno Lima",
- "entidade" : ["Pombogira Maria Padilha", "Cigana Estela", "Exu Cigano Bruno",
- "Erê Ruizinho", "Malandra Maria Preta da Lapa",
- "Marinheira Luna", "Cabocla Jurema"],
+"email" : "aninhaplima@gmail.com",
  "isComplete" : true
+}
+
+###
+@id=2
+DELETE {{TodoAPI_HostAddress}}/api/todoitems/{{id}}
+
+###
+
+PUT {{TodoAPI_HostAddress}}/api/todoitems/1
+Content-Type: application/json
+
+{
+"id": 1,
+"name": "Régis Bittencourt de Oliveira",
+"email" : "regis.dsotm1973@gmail.com",
+"isComplete" : true
 }
 
 ###
